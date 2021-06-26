@@ -1,0 +1,25 @@
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+header h1 {
+    text-align: center;
+}
+header h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.question {
+    background-color: aqua;
+}
+
+.answer {
+    background-color: red;
+}

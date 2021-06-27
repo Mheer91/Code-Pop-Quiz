@@ -12,18 +12,15 @@
 </head>
 <body>
     <header>
-        <h1>Code Quiz</h1>
-        <p>The quiz is multiple choice. You have x to take the quiz. Incorrect answers will reduce the time remaining. Save your score at the end and take the quiz again to try and beat it! </p>
-        <h2 class="start">Press the start button go begin!</h2>
+        <h1 id="quizMessage">Code Quiz</h1>
+        <p id="startMessage">The quiz is multiple choice. You have x to take the quiz. Incorrect answers will reduce the time remaining. Save your score at the end and take the quiz again to try and beat it! </p>
+        <h2 id="startMessage2">Press the start button to begin!</h2>
     </header>
-    <main>
-        <div>
-            <div id="question">D</div>
-            <div id="answer1">D</div>
-            <div id="answer2">D</div>
-            <div id="answer3">D</div>
-            <div id="answer4">D</div>
-        </div>
+    <main id = "mainContent">
+        <div id="question"></div>
+        <ul id="answerlist">
+            <button class="button1" id="start">Start</button><br>        
+        </ul>
     </main>
     
     <script src="assets/script.js"></script>

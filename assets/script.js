@@ -193,26 +193,17 @@ function cycleQuestion() {
 
     function correctOrIncorrect(event) {
         if (event.target.textContent === qAndA[currentQuestion].answer) {
-            correctAnswer();
-
-            if (currentQuestion < qAndA.length - 1) {
-                cycleQuestion();
-            } else {
-                gameOver()
-            }
-
+          correctAnswer();
         } else {
-            incorrectAnswer();
-
-            if (currentQuestion < qAndA.length - 1) {
-                cycleQuestion();
-            } else {
-                gameOver()
-            }
+          incorrectAnswer();
         }
-    };
-
-
+      
+        if (currentQuestion < qAndA.length - 1) {
+          cycleQuestion()
+        } else {
+          gameOver();
+        }
+      }
 
 };
 
